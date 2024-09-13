@@ -3,9 +3,12 @@ package org.firstinspires.ftc.teamcode.opmodes.autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-@Autonomous (group = "Starters", name = "AutoStarter")
-public class MyFirstAutonomous extends LinearOpMode {
-    // define the motors, servos, sensors and so forth that you will use throughout your OpMode here
+@Autonomous (group = "Starters", name = "AutoStarter2")
+class robot1MyFirstAutonomous extends LinearOpMode {
+    @Override
+    public void waitForStart() {
+    }
+// define the motors, servos, sensors and so forth that you will use throughout your OpMode here
     // remember to import
     // make these all private
 

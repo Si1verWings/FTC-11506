@@ -3,9 +3,13 @@ package org.firstinspires.ftc.teamcode.starters;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 
-@TeleOp (group = "Starters", name = "AutoStarter")
+@TeleOp (group = "Starters", name = "TeleOpStart")
 public class TeleOpStart extends OpMode {
-    //define the motors, servos, sensors and so forth that you will use throughout your OpMode here
+    @Override
+    public void start() {
+        super.start();
+    }
+//define the motors, servos, sensors and so forth that you will use throughout your OpMode here
     // remember to import
 
     /**

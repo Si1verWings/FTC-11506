@@ -30,10 +30,10 @@ public class MecanumDrive extends OpMode {
 
         // Name strings must match up with the config on the Robot Controller
         // app.
-        front_left   = hardwareMap.get(DcMotor.class, "front_left");
-        front_right  = hardwareMap.get(DcMotor.class, "front_right");
-        back_left    = hardwareMap.get(DcMotor.class, "back_left");
-        back_right   = hardwareMap.get(DcMotor.class, "back_right");
+        front_left   = hardwareMap.get(DcMotor.class, "fr");
+        front_right  = hardwareMap.get(DcMotor.class, "fl");
+        back_left    = hardwareMap.get(DcMotor.class, "br");
+        back_right   = hardwareMap.get(DcMotor.class, "bl");
     }
 
     @Override
@@ -41,8 +41,8 @@ public class MecanumDrive extends OpMode {
 
         // Mecanum drive is controlled with three axes: drive (front-and-back),
         // strafe (left-and-right), and twist (rotating the whole chassis).
-        double drive  = gamepad1.left_stick_y;
-        double strafe = gamepad1.left_stick_x;
+        double drive  = gamepad1.left_stick_x;
+        double strafe = gamepad1.left_stick_y;
         double twist  = gamepad1.right_stick_x;
 
         /*
